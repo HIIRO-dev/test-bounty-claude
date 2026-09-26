@@ -19,3 +19,6 @@ jobs:
           anthropic_api_key: ${{ secrets.ANTHROPIC_API_KEY }}
           github_token: ${{ secrets.GITHUB_TOKEN }}
           allowed_non_write_users: "*"
+          prompt: |
+            Analyze this issue and post a comment summarizing what the reporter is asking.
+            Start your comment with "Hello! I've analyzed this issue:"
